@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Angehender Anwendungsentwickler auf der Suche nach einem Praktikumsplatz.">
+  <title>Rezeptfarbe</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <main>
+      <form>
+        <fieldset>
+          <legend>Rezeptfarbe ermitteln</legend>
+          <div class="container__form-control">
+            <p>Fällt das Medikament unter das §BtMG ?</p>
+            <input type="radio" name="btm" value="ja" id="btm-ja">
+            <label for="btm-ja">Ja</label>
+            <input type="radio" name="btm" value="nein" id="btm-nein">
+            <label for="btm-nein">Nein</label>
+          </div>
+          <div class="container__form-control">
+            <p>Ist das Medikament verschreibungspflichtig ?</p>
+            <input type="radio" name="verschr" value="ja" id="verschr-ja">
+            <label for="verschr-ja">Ja</label>
+            <input type="radio" name="verschr" value="nein" id="verschr-nein">
+            <label for="verschr-nein">Nein</label>
+          </div>
+          <div class="container__form-control">
+            <p>Ist der Patient gesetzlich versichert ?</p>
+            <input type="radio" name="gesetz" value="ja" id="gesetz-ja">
+            <label for="gesetz-ja">Ja</label>
+            <input type="radio" name="gesetz" value="nein" id="gesetz-nein">
+            <label for="gesetz-nein">Nein</label>
+          </div>
+          <div class="container__form-action">
+            <button id="btn">Rezeptfarbe anzeigen</button>
+            <button id="reset">Zurücksetzen</button>
+          </div>
+          <div class="container__footer">
+            <a href="https://github.com/oje-edu/js_rezeptfarbe" target="_blank" rel="noopener noreferrer">Quellcode</a>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+  </div>
+
+  <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
